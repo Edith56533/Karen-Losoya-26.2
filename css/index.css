@@ -1,0 +1,63 @@
+:root {
+    --navy: #323B60;
+    --grey-brown: #7F7C73;
+    --eggshell: #DDDBD7;
+    --lilac: #975C9B;
+    --burgundy: #822651;
+}
+
+
+
+body {
+    background-color: var(--grey-brown);
+    color: var(--navy);
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    color:var(--burgundy);
+    font-family: "Great Vibes", cursive;
+
+}
+
+section {
+padding: 20px;
+border: 10px solid var(--lilac);
+margin: 20px;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Indie Flower", sans-serif;
+}
+
+li{
+        font-family: "Indie Flower", sans-serif;
+        background-color: var(--lilac);
+        color: var(--eggshell);
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        list-style: none;
+        justify-content: center;
+}
+
+#Connect a {
+    color: var(--eggshell);
+    font-weight: bold;
+    font-family: "Indie Flower", sans-serif;
+    background-color: var(--burgundy);
+    padding: 10px 20px;
+    font-size: 30px;
+}

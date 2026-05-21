@@ -1,7 +1,9 @@
 let today = new Date();
 let thisYear = today.getFullYear();
 
-let footer = document.querySelector("footer");
+let footer = document.createElement('footer');
+document.body.appendChild(footer);
+
 let copyright = document.createElement("p")
 copyright.innerHTML = `&copy; ${thisYear} Karen Losoya`;
 

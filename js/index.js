@@ -1,0 +1,21 @@
+let today = new Date();
+let thisYear = today.getFullYear();
+
+let footer = document.createElement('footer');
+document.body.appendChild(footer);
+
+let copyright = document.createElement("p")
+copyright.innerHTML = `&copy; ${thisYear} Karen Losoya`;
+
+footer.appendChild(copyright);
+
+let skills = ['JavaScript', 'HTML', 'CSS', 'GitHub']
+let skillsList = document.querySelector('#skills ul')
+
+for (let i = 0; i< skills.length; i++){
+    let skill = document.createElement('li')
+    skill.innerHTML = skills[i]
+    skillsList.appendChild(skill)
+    
+}
+

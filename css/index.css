@@ -82,7 +82,39 @@ li{
     font-size: 20px;
 }
 
+
+
 .job-description {
     font-size: 16px;
     margin-top: 5px;
 }
+
+#skills ul  {
+    list-style: none;
+    padding:0%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#skills li {
+    background-color: var(--burgundy);
+    color: var(--eggshell);
+    padding: 10px 20px;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

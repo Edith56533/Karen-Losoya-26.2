@@ -89,7 +89,7 @@ li{
     margin-top: 5px;
 }
 
-#skills ul  {
+#Skills ul  {
     list-style: none;
     padding:0%;
     display: flex;
@@ -98,7 +98,7 @@ li{
     justify-content: center;
 }
 
-#skills li {
+#Skills li {
     background-color: var(--burgundy);
     color: var(--eggshell);
     padding: 10px 20px;

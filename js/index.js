@@ -7,7 +7,7 @@ copyright.innerHTML = `&copy; ${thisYear} Karen Losoya`;
 
 footer.appendChild(copyright);
 
-let skills = ['Java Script', 'HTML', 'CSS', 'GitHub']
+let skills = ['JavaScript', 'HTML', 'CSS', 'GitHub']
 let skillsList = document.querySelector('#Skills ul')
 
 for (let i = 0; i< skills.length; i++){

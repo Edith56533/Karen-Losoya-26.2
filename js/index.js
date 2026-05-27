@@ -29,11 +29,12 @@ console.log(name, email, message)
 
 let messageList = document.querySelector('#messages ul')
 let newMessage = document.createElement('li')
-newMessage.innerHTML = `<a href = "mailto:${name}">${email}</a> <span>${message}</span>`
+newMessage.innerHTML = `<a href = "mailto:${email}">${name}</a> <span>${message}</span>`
 
 messageList.appendChild(newMessage)
 
 let removeButton = document.createElement('button')
+removeButton.setAttribute('type', 'button')
 removeButton.innerHTML = 'Remove'
 removeButton.addEventListener('click', function(){
     let entry = this.parentNode

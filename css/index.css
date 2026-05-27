@@ -145,7 +145,11 @@ li{
     cursor: pointer;
 }
 
-
+@media (max-width: 600px) {
+    #leaveMessage input, #leaveMessage textarea, #leaveMessage button {
+        width: 100%; font-size: 18px; padding: 14px 12px; box-sizing: border-box;
+    }
+}
 
 
 

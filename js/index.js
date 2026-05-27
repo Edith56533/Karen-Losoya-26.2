@@ -27,7 +27,7 @@ let message = event.target.usersMessage.value
 
 console.log(name, email, message)
 
-let messageSection = document.querySelector('messages')
+let messageSection = document.querySelector('#messages')
 let messageList = messageSection.querySelector('ul')
 let newMessage = document.createElement('li')
 newMessage.innerHTML = `<a href = "mailto:${email}">${name}</a> <span>${message}</span>`

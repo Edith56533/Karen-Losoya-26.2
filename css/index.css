@@ -104,12 +104,52 @@ li{
     padding: 10px 20px;
     font-family: "Indie Flower", sans-serif;
     font-size: 20px;
+
+}
+
+#leaveMessage form label {
+    display: block;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 8px;
 }
 
 
+#leaveMessage form input{
+    padding: 10px 10px;
+    border: 1px solid var(--burgundy);
+    margin: 10px 0px;
+    transition: all .2s;
+    border-radius: 5px;
+}
 
+#leaveMessage form textarea {
+    margin-top: 10px;
+    border: 1px solid var(--burgundy);
+    padding: 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+}
 
+#leaveMessage button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 55px;
+    background: var(--burgundy);
+    color: var(--lilac);
+    font-size: 16px;
+    cursor: pointer;
+}
 
+@media (max-width: 600px) {
+    #leaveMessage input, #leaveMessage textarea, #leaveMessage button {
+        width: 100%; font-size: 18px; padding: 14px 12px; box-sizing: border-box;
+    }
+}
 
 
 

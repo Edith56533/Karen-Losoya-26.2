@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 let today = new Date();
 let thisYear = today.getFullYear();
 
@@ -18,4 +20,26 @@ for (let i = 0; i< skills.length; i++){
     skillsList.appendChild(skill)
     
 }
+fetch("https://api.github.com/users/Edith56533/repos")
+    .then(response => response.json())
+    .then(repos => {
+        repos.forEach(repo => console.log(repo.name));
+    })
+    .catch(error => console.error(error));
 
+const projectSection = document.getElementById("projects");
+const projectList = projectSection.querySelector("ul");
+
+fetch("https://api.github.com/users/Edith56533/repos")
+  .then(response => response.json())
+  .then(data => {
+    const repositories = data;
+    console.log(repositories);
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => console.error(error));

@@ -1,0 +1,86 @@
+
+body {
+    background-color: var(--grey-brown);
+    color: var(--navy);
+    font-family: "Indie Flower", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+}
+
+navy a {
+    color: var(--eggshell);
+    font-family: "Indie Flower", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: var(--lilac);
+}
+
+select {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 20px;
+    background-color:var(--navy);
+    color: var(--eggshell);
+    border: 3px solid var(--lilac);
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 30px;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 20px;
+    background-color: var(--burgundy);
+    color: var(--eggshell);
+    border: none;
+}
+
+button:hover {
+    background-color: var(--lilac);
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#results p{
+    font-size: 24px;
+    background-color: var(--navy);
+    color: var(--eggshell);
+    padding: 15px 25px;
+    border: 3px solid var(--lilac);
+}
+
+#results img {
+    max-width: 100%;
+    border: 5px solid var(--lilac);
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 40px;
+    }
+
+    select, botton {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+}

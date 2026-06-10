@@ -151,7 +151,22 @@ li{
     }
 }
 
-
+#projects ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:center;
+}
+#projects li {
+    background-color: var(--burgundy);
+    color: var(--eggshell);
+    padding: 10 px 20 px;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 20 px;
+    border-radius: 5px;
+}
 
 
 

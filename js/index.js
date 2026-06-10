@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 let today = new Date();
 let thisYear = today.getFullYear();
 

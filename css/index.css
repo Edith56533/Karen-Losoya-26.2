@@ -162,9 +162,9 @@ li{
 #projects li {
     background-color: var(--burgundy);
     color: var(--eggshell);
-    padding: 10 px 20 px;
+    padding: 10px 20px;
     font-family: "Indie Flower", sans-serif;
-    font-size: 20 px;
+    font-size: 20px;
     border-radius: 5px;
 }
 

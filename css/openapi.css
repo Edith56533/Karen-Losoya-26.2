@@ -11,7 +11,7 @@ h1 {
     text-align: center;
 }
 
-navy a {
+nav a {
     color: var(--eggshell);
     font-family: "Indie Flower", sans-serif;
     font-size: 20px;
@@ -78,7 +78,7 @@ button:hover {
         font-size: 40px;
     }
 
-    select, botton {
+    select, button {
         width: 90%;
         margin: 10px auto;
         display: block;

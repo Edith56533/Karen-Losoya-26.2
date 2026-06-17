@@ -1,5 +1,4 @@
-const { createElement } = require("react");
-
+//Copyright footer
 let today = new Date();
 let thisYear = today.getFullYear();
 
@@ -11,7 +10,8 @@ copyright.innerHTML = `&copy; ${thisYear} Karen Losoya`;
 
 footer.appendChild(copyright);
 
-let skills = ['JavaScript', 'HTML', 'CSS', 'GitHub']
+//Skills as list items
+let skills = ['JavaScript', 'HTML', 'CSS', 'GitHub', 'Git', 'MySQL', 'Tableau']
 let skillsList = document.querySelector('#skills ul')
 
 for (let i = 0; i< skills.length; i++){
@@ -19,13 +19,8 @@ for (let i = 0; i< skills.length; i++){
     skill.innerHTML = skills[i]
     skillsList.appendChild(skill)
 }
-fetch("https://api.github.com/users/Edith56533/repos")
-    .then(response => response.json())
-    .then(repos => {
-        repos.forEach(repo => console.log(repo.name));
-    })
-    .catch(error => console.error(error));
 
+//Projects: fetch GitHub repository in list form
 const projectSection = document.getElementById("projects");
 const projectList = projectSection.querySelector("ul");
 
@@ -37,11 +32,17 @@ fetch("https://api.github.com/users/Edith56533/repos")
 
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement("li");
-      project.innerText = repositories[i].name;
+      const link = document.createElement("a")
+      link.href = repositories[i].html_url;
+      link.target = "_blank";
+      link.innerText = repositories[i].name;
+      project.appendChild(link);
       projectList.appendChild(project);
     }
   })
   .catch(error => console.error(error));
+
+//Leave a Message: how the form is submitted and the message list is built
 let messageForm = document.querySelector('[name="leave_message"]')
 messageForm.addEventListener('submit', function(event){
 event.preventDefault()

@@ -1,3 +1,4 @@
+/* CSS Color Palette*/
 :root {
     --navy: #323B60;
     --grey-brown: #7F7C73;
@@ -6,40 +7,35 @@
     --burgundy: #822651;
 }
 
-
-
+/* Base body layout, fonts and colors*/
 body {
     background-color: var(--grey-brown);
     color: var(--navy);
 }
-
 h1 {
     font-size: 60px;
     font-family: "Great Vibes", cursive;
     text-align: center;
 
 }
-
 h2{
     font-size: 40px;
     font-weight: 700;
     color:var(--burgundy);
     font-family: "Great Vibes", cursive;
-
 }
 
+/*Section layout, fonts and colors*/
 section {
 padding: 20px;
 border: 10px solid var(--lilac);
 margin: 20px;
 }
-
 p {
     font-size: 30px;
     font-weight: 500;
     font-family: "Indie Flower", sans-serif;
 }
-
 li{
         font-family: "Indie Flower", sans-serif;
         background-color: var(--lilac);
@@ -52,7 +48,7 @@ li{
         list-style: none;
         justify-content: center;
 }
-
+/*Connect layout, fonts and colors*/
 #Connect a {
     color: var(--eggshell);
     font-weight: bold;
@@ -61,11 +57,11 @@ li{
     padding: 10px 20px;
     font-size: 30px;
 }
+/*Experience layout, fonts and colors*/
 #Experience ul {
     list-style: none;
     padding: 0;
 }
-
 #Experience li {
     background-color: var(--lilac);
     color: var(--eggshell);
@@ -74,21 +70,18 @@ li{
     border-radius: 5px;
     display: block;
 }
-
 .job-header {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 20px;
 }
-
-
-
 .job-description {
     font-size: 16px;
     margin-top: 5px;
 }
 
+/*Skills layout, fonts and colors*/
 #skills ul  {
     list-style: none;
     padding:0%;
@@ -97,7 +90,6 @@ li{
     gap: 10px;
     justify-content: center;
 }
-
 #skills li {
     background-color: var(--burgundy);
     color: var(--eggshell);
@@ -107,15 +99,21 @@ li{
 
 }
 
+/*Message Form layout, fonts and colors*/
+#leaveMessage form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 #leaveMessage form label {
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-family: "Indie Flower", sans-serif;
     font-size: 18px;
     color: var(--navy);
-    margin-bottom: 8px;
+    width: 400px;
 }
-
-
 #leaveMessage form input{
     padding: 10px 10px;
     border: 1px solid var(--burgundy);
@@ -123,7 +121,6 @@ li{
     transition: all .2s;
     border-radius: 5px;
 }
-
 #leaveMessage form textarea {
     margin-top: 10px;
     border: 1px solid var(--burgundy);
@@ -134,7 +131,6 @@ li{
     font-size: 14px;
     border-radius: 5px;
 }
-
 #leaveMessage button {
     padding: 12px 30px;
     border: none;
@@ -145,12 +141,14 @@ li{
     cursor: pointer;
 }
 
+/*layout for small screen flexibility*/
 @media (max-width: 600px) {
     #leaveMessage input, #leaveMessage textarea, #leaveMessage button {
         width: 100%; font-size: 18px; padding: 14px 12px; box-sizing: border-box;
     }
 }
 
+/*Projects layout, fonts and colors*/
 #projects ul{
     list-style: none;
     padding: 0;
@@ -167,9 +165,25 @@ li{
     font-size: 20px;
     border-radius: 5px;
 }
-
-
-
-
-
-
+#projects li a {
+    color: var(--eggshell);
+    text-decoration: none;
+}
+/*Navigation section layout, fonts and colors*/
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: var(--navy);
+    flex-wrap: wrap;
+}
+nav a {
+    color: var(--eggshell);
+    font-family: "Indie Flower", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--lilac);
+}
